@@ -72,6 +72,9 @@ zero.addEventListener("click",function(){text=display.textContent;text+=0;displa
 dot.addEventListener("click",function(){text=display.textContent;text+=".";display.innerHTML=text});
 
  equal.addEventListener("click",function(){
-    display.innerHTML=eval(display.textContent)});
-   
+    try{
+        display.innerHTML=eval(display.textContent);
+    }
+   catch(){display.innerHTML="ERROR!";}
+}
     // The operation
